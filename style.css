@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: sans-serif;  
+    height: 100vh;
+}
+
+/* header */
+header{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+/* calculator conatiner */
+.calculator-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;   
+    margin: 30px auto;
+    width: 480px;
+    text-align: center;
+    background-color: rgb(240, 240, 240); 
+    padding: 10px;    
+    box-shadow: 15px 50px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* display */
+input{
+    border: none;
+    font-size: 52px;
+}
+.calculation-body{
+    grid-column: 1 / 5;
+    grid-row: 1;
+    border-bottom: 2px solid black;
+    height: 80px;
+    margin-bottom: 5px;
+    text-align: right;
+    background-color: white;
+    
+}
+
+/* buttons */
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    height: 100px;
+    background-color: white;
+    padding: 20px; 
+    font-size: 46px;
+    font-weight:500;
+    cursor: pointer;
+}
+.box-result{
+    background-color: rgb(27, 186, 27);
+    color: white;
+}
+.operator{
+    color: rgb(27, 186, 27);
+    background-color: rgba(233, 232, 232, 0.937);
+    font-size: 52px;
+}
+.red{
+    color: red;
+    background-color: rgba(233, 232, 232, 0.937);
+}
+button:hover{
+    background-color: rgba(218, 218, 218, 0.937);
+    font-size: 40px;
+}
+.del-operator{
+    color:rgb(27, 186, 27);
+    background-color: rgba(233, 232, 232, 0.937);
+    font-size: 40px;
+    font-weight: bold;
+}
+    

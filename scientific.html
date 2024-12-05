@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="scientific.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>🧮 Calculator </h1> 
+        <nav>
+            <a href="index.html">Standard</a>
+            <a href="./scientific.html"> Scientific</a>
+        </nav>
+    </header>
+
+    <div class="buttons calculator-container" id="scientific">
+        <input type="text" class="calculation-body" id="display" disabled />
+
+        <button class="operator">2<sup>nd</sup></button>
+        <button onclick="pi()" class="operator">&Pi;</button>
+        <button class="operator">e</button>
+        <button onclick="clear()" class="red">C</button>
+        <button class="operator">⌫</button>
+
+        <button onclick="square()" class="operator">x<sup>2</sup></button>
+        <button class="operator">1/x</button>
+        <button class="operator">|x|</button>
+        <button onclick="exp()" class="operator">exp</button>
+        <button onclick="chooseOpertaion('%')" class="operator">%</button>
+
+        <button class="operator"><sup>2</sup>&radic;x</button>
+        <button class="operator">(</button>
+        <button class="operator">)</button>
+        <button class="operator">n!</button>
+        <button onclick="chooseOpertaion('/')" class="operator">/</button>
+
+        <button class="operator">x<sup>y</sup></button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="chooseOpertaion('*')" class="operator">*</button>
+
+        <button class="operator" onclick="chooseOpertaion('^')">10<sup>x</sup></button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="chooseOpertaion('-')" class="operator">-</button>
+
+        <button class="operator">log</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="chooseOpertaion('+')" class="operator">+</button>
+
+        <button class="operator">In</button>
+        <button class="operator">.</button>
+        <button>0</button>
+        
+        <button class="box-result" onclick="compute()">=</button>
+
+    </div>
+    <script src="scientific.js"></script>
+</body>
+</html>

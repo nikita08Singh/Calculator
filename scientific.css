@@ -1,0 +1,10 @@
+.calculator-container{
+    display: grid;
+    grid-template-columns: repeat(5,118px);
+    width: 650px;
+}
+    
+.calculation-body{
+    grid-column: 1 / 6;
+    grid-row: 1;
+}
